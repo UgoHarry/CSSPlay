@@ -1,13 +1,45 @@
-html, body {
-  /*background: #fff;*/
+:root {
+    --header-colour: #59D3FA;
+    --font-colour: #000;
+    --rotate: 10deg;
+    --main-background:#FFF;
+    --font-size: 12px;
+    --imageBlur:
+}
+
+body {
+    background: var(--main-background);
 }
 
 .banner-heading{
-  color: #59D3FA;
+  color: var(--header-colour);
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
   font-size: 60px;
   width: 60%;
   margin: 70px auto 50px;
   text-align: center;
+}
+
+.flex-size {
+    display: inline-block;
+    font-size: var(--font-size);
+}
+
+.flex-colour {
+    display: inline-block;
+}
+
+.flex-rotate {
+    display: inline-block;
+    transform: rotate(var(--rotate));
+}
+
+.flex-blur {
+    display: inline-block;
+}
+
+input[type=range] {
+    display: inline-block;
+    width: 120px;
 }

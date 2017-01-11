@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Nunito+Sans|Nunito:200,300,400|Open+Sans+Condensed:300|Roboto|Roboto+Condensed" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>CSS Play - CSS Variables</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nunito+Sans|Nunito:200,300,400|Open+Sans+Condensed:300|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Play - CSS Variables</title>
 </head>
+
 <body>
-  <h1 class="banner-heading">CSS Play - Working with CSS Variables</h1>
-  <div class="section-size">
-    <p class="flex-text">Using the range handle to adjust the size of this font</p>
-    <input type="range" name="fontSize" min="12px" max="60px" data-sizing = "px">
-  </div>
-  <div class="section-colour">
-    <p class="flex-colour">Using the color picker to change the colour of this font</p>
-    <input type="color" name="colorpick">
-  </div>
-  <div class="section-rotate">
-    <p class="flex-rotate">Using the range handle to rotate this font</p>
-    <input type="range" name="flexImage">
-  </div>
-  <div class="section-blur">
-    <p class="flex-blur">Using the range handle to blur or sharpen this image</p>
-    <input type="range" name="imageBlur">
-  </div>
+    <div class="container">
+        <h1 class="banner-heading">CSS Play</h1>
+        <div class="section-size">
+            <p class="flex-size">Using the range handle to adjust the size of this font</p>
+            <input type="range" name="font-size" min="12" max="60" data-sizing="px">
+        </div>
+        <div class="section-colour">
+            <p class="flex-colour">Using the color picker to change the colour of this font</p>
+            <input type="color" name="header-color">
+        </div>
+        <div class="section-rotate">
+            <p class="flex-rotate">Using the range handle to rotate this font</p>
+            <input type="range" name="rotate" min="0" max="180" data-sizing= "deg">
+        </div>
+        <div class="section-blur">
+            <p class="flex-blur">Using the range handle to blur or sharpen this image</p>
+            <input type="range" name="imageBlur" min="0" max="20" data-sizing= "px">
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
