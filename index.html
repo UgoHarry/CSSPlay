@@ -10,25 +10,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="banner-heading">CSS Play</h1>
-        <div class="section-size">
-            <p class="flex-size">Using the range handle to adjust the size of this font</p>
-            <input type="range" name="font-size" min="12" max="60" data-sizing="px">
+    <div class="custom-wrapper">
+        <div class="banner">
+            <h1 class="banner-heading">CSS Play - Variables</h1>
         </div>
-        <div class="section-colour">
-            <p class="flex-colour">Using the color picker to change the colour of this font</p>
-            <input type="color" name="header-color">
+        <div class="description">
+            <div class="container">
+                <p>So the idea behind this is very simple</p>
+                <ul class="desc-steps">
+                    <li class="step-item">Global styles are created using CSS variables</li>
+                    <li class="step-item">These global styles are applied to elements of your choosing</li>
+                    <li class="step-item">JavaScript uses certain <span class="highlight">input</span> elements to adjust/changes these global styles</li>
+                    <li class="step-item">Changes on the global styles reflect on applied elements, in real time</li>
+                </ul>
+            </div>
         </div>
-        <div class="section-rotate">
-            <p class="flex-rotate">Using the range handle to rotate this font</p>
-            <input type="range" name="rotate" min="0" max="180" data-sizing= "deg">
+        <div class="playground">
+        <div class="container">
+            <div class="section-size">
+                <p class="flex-size">Using the range handle to adjust the size of this font</p>
+                <input type="range" name="font-size" min="12" max="60" data-sizing="px">
+            </div>
+            <div class="section-colour">
+                <p class="flex-colour">Using the color picker to change the colour of this font</p>
+                <input type="color" name="header-color">
+            </div>
+            <div class="section-rotate">
+                <p class="flex-rotate">Using the range handle to rotate this font</p>
+                <input type="range" name="rotate" min="0" max="180" data-sizing="deg">
+            </div>
+            <div class="section-blur">
+                <p class="flex-blur">Using the range handle to blur or sharpen this image</p>
+                <input type="range" name="imageBlur" min="0" max="20" data-sizing="px">
+            </div>
         </div>
-        <div class="section-blur">
-            <p class="flex-blur">Using the range handle to blur or sharpen this image</p>
-            <input type="range" name="imageBlur" min="0" max="20" data-sizing= "px">
-        </div>
+      </div>
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>
