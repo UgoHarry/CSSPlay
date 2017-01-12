@@ -5,11 +5,15 @@
     --rotate: 10deg;
     --main-background:#FFF;
     --font-size: 12px;
-    --imageBlur:
+    --blur:10px
 }
 
 body {
     background: var(--main-background);
+}
+
+.container {
+    padding: 0 10%;
 }
 
 .banner{
@@ -36,30 +40,57 @@ body {
   list-style-type: decimal;
 }
 
-
-.description .container p{
-
+.playground p{
+    font-size: 20px;
 }
 
-.flex-size {
-    display: inline-block;
-    font-size: var(--font-size);
-}
-
-.flex-colour {
-    display: inline-block;
-}
-
-.flex-rotate {
-    display: inline-block;
-    transform: rotate(var(--rotate));
-}
-
-.flex-blur {
-    display: inline-block;
+.playground input {
+    margin-left: 30px;
 }
 
 input[type=range] {
     display: inline-block;
     width: 120px;
+}
+
+.section-size {
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.playground .flex-size {
+    display: inline-block;
+    font-size: var(--font-size);
+}
+
+.section-colour {
+    padding: 20px 0;
+}
+
+ .section-colour .flex-colour {
+    display: inline-block;
+    color: var(--font-colour);
+}
+
+.section-rotate {
+    padding: 20px 0;
+}
+
+.section-rotate .flex-rotate {
+    display: inline-block;
+    transform: rotate(var(--rotate));
+}
+
+.section-blur {
+    padding: 20px 0;
+}
+
+.section-blur p{
+    display: inline-block;
+}
+
+.section-blur .flex-blur  {
+    width: 100%;
+    height: 100%;
+    filter: blur(var(--blur));
 }
